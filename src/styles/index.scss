@@ -1,0 +1,83 @@
+$phone: 750px;
+$tablet: 800px;
+$break-large: 1100px;
+$green:#009341;
+$yellow:#ffd250;
+
+@import "header";
+@import "story";
+@import "menu";
+@import "video";
+@import "contact";
+@import "typography";
+
+html, body {
+    // overflow-x: hidden;
+    // background-color: aqua;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'ABCGintoNord', sans-serif;
+  }
+  h1, h2, h3, h4, h5, p, button, input, optgroup, select, textarea{
+    font-family: 'ABCGintoNord', sans-serif;
+  }
+*{
+	box-sizing: border-box;
+	;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pageWrapper {
+  position: relative;
+}
+
+
+.legalInfo-div{
+  width: 60%;
+  margin: 0 auto;
+  padding: 5% 0;
+  min-height: 700px;
+  @media screen and (max-width: 700px) {
+    width: 80%;
+  }
+  
+}
+
+.marquee .marquee_list {
+  // -webkit-animation: ticker 20s infinite linear;
+   animation: ticker 20s infinite linear;
+   animation-duration: 20s;
+}
+
+
+.spin {
+  animation: spin 10s linear infinite forwards;
+}
+
+.spin_back {
+  animation: spin_back 10s linear infinite forwards;
+}
+
+@keyframes ticker {
+   
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes spin_back {
+  100% {
+    transform: rotate(-1turn);
+  }
+}
