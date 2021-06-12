@@ -3,6 +3,8 @@ import TopBarOrder from "../components/topBarOrder"
 import Header from "../components/header"
 import Story from "../components/story"
 import Menu from "../components/menu"
+import Gif from "../components/gif"
+import Location from "../components/location"
 import Followus from "../components/followus"
 import Contact from "../components/contact"
 // import OrderNow from "../components/ordernow"
@@ -33,6 +35,8 @@ export default function Home() {
         </Plx> */}
     <Story toggleMenu={toggleMenu} menuState={menuActive}/>
     <Menu/>
+    <Gif/>
+    <Location/>
     <Followus/>
     <Contact/>
     </div>

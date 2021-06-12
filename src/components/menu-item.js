@@ -35,7 +35,7 @@ const MenuItem = props => {
   }
 
   return (
-    <div className="menuItem relative w-full  px-4">
+    <div className="menuItem relative w-full  px-8">
       <Img fluid={pic(props.pic)} className="menu-pic border-6  border-solid border-skin" />
       <div className="text absolute bottom-0  w-full flex justify-center text-skin mb-4"> {props.name}</div>
     </div>

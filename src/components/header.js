@@ -3,7 +3,7 @@ import logo from "../images/logo.png"
 import btnOrder from "../images/btn-order.png"
 import btnMenu from "../images/btn-menu.png"
 import { Link } from "gatsby"
-import Sticky from "react-sticky-el"
+//import Sticky from "react-sticky-el"
 import Plx from "react-plx"
 
 const Header = () => {

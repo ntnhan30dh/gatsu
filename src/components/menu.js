@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 import Slider from "react-slick"
 
 // import Img from "gatsby-image"
@@ -65,7 +65,7 @@ const Menu = () => {
         <MenuItem name="Pad Thai" pic="padThai" />
         <MenuItem name="SESAME SALAD" pic="sesame" />
       </Slider>
-      <div className="absolute bottom-0">
+      <div className="absolute -bottom-8">
             <Circle color="yellow" text="CHECK OUT THE MENU" />
           </div>
       </div>
