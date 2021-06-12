@@ -5,7 +5,7 @@ import Slider from "react-slick"
 
 // import Img from "gatsby-image"
 import MenuItem from "./menu-item"
-
+import Circle from "./circle"
 import Marquee from "./marquee"
 
 const Menu = () => {
@@ -58,32 +58,17 @@ const Menu = () => {
   }
 
   return (
-    <section className="menuContainer " id="menu">
+    <section className="menuContainer bg-orange" id="menu">
       <Marquee bg="bg-orange" />
-      <Slider {...settings} className="">
+      <div className="siderWrap relative">
+      <Slider {...settings} className="my-6">
         <MenuItem name="Pad Thai" pic="padThai" />
-        <MenuItem
-          name="SESAME SALAD"
-          pic="sesame"
-        />
-
-        <div>
-          {" "}
-          <h1>hiiiiiiiii</h1>
-        </div>
-        <div>
-          {" "}
-          <h1>hiiiiiiiii</h1>
-        </div>
-        <div>
-          {" "}
-          <h1>hiiiiiiiii</h1>
-        </div>
-        <div>
-          {" "}
-          <h1>hiiiiiiiii</h1>
-        </div>
+        <MenuItem name="SESAME SALAD" pic="sesame" />
       </Slider>
+      <div className="absolute bottom-0">
+            <Circle color="yellow" text="CHECK OUT THE MENU" />
+          </div>
+      </div>
       <Marquee bg="bg-orange" />
     </section>
   )

@@ -27,8 +27,8 @@ const Header = () => {
     },
   ];
   return (
-    <Sticky className="sticky">
-      <header className="flex justify-between items-center px-2 bg-skin">
+    <div className=" sticky top-0 z-50">
+      <header className="  flex justify-between items-center px-2 bg-skin">
       <Link to="/" >
         <div className=" w-24">
           <img src={btnOrder} alt="logo"  />
@@ -45,7 +45,7 @@ const Header = () => {
         </div>
         </Link>
       </header>
-    </Sticky>
+    </div>
   )
 }
 

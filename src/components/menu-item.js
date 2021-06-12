@@ -2,10 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-
 const MenuItem = props => {
-
-
   const data = useStaticQuery(graphql`
     {
       padThai: file(relativePath: { eq: "menu_padthai.png" }) {
@@ -24,32 +21,24 @@ const MenuItem = props => {
         }
       }
     }
-
-    
   `)
-  
-const pic = (picName) =>{
-  switch(picName) {
-    case "padThai":
-      return data.padThai.childImageSharp.fluid
+
+  const pic = picName => {
+    switch (picName) {
+      case "padThai":
+        return data.padThai.childImageSharp.fluid
       case "sesame":
         return data.sesame.childImageSharp.fluid
-    default:
-      return  data.padThai.childImageSharp.fluid
+      default:
+        return data.padThai.childImageSharp.fluid
+    }
   }
-  
-} 
-  
-
 
   return (
-    <div className="menuItem">
-            <Img
-              fluid={pic(props.pic)}
-              className="menu-pic"
-            />
-            <div className="text"> {props.name}</div>
-          </div>
+    <div className="menuItem relative w-full  px-4">
+      <Img fluid={pic(props.pic)} className="menu-pic border-6  border-solid border-skin" />
+      <div className="text absolute bottom-0  w-full flex justify-center text-skin mb-4"> {props.name}</div>
+    </div>
   )
 }
 
