@@ -54,6 +54,12 @@ html, body {
    animation-duration: 20s;
 }
 
+.marquee .marquee_list_logo {
+  // -webkit-animation: ticker 20s infinite linear;
+   animation: ticker 10s infinite linear;
+   animation-duration: 10s;
+}
+
 
 .spin {
   animation: spin 10s linear infinite forwards;

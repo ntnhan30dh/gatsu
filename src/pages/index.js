@@ -37,8 +37,8 @@ export default function Home() {
     <Menu/>
     <Gif/>
     <Location/>
-    <Followus/>
     <Contact/>
+    <Followus/>
     </div>
   )
 }
