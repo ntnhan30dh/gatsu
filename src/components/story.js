@@ -74,7 +74,7 @@ const Story = props => {
       <Marquee bg="bg-orange" />
       <div className="DevourContainer relative bg-skin p-8">
         <div className="headline ">
-          <h1 className="text-blue text-4xl">READY STEADY DEVOUR</h1>
+          <h1 className=" text-blue text-4xl">READY STEADY DEVOUR</h1>
           <div className=" w-36 absolute -top-10 right-0">
             <img src={gatsu_guy} alt="logo" />
           </div>

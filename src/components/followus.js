@@ -1,79 +1,53 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import { useIntl } from "gatsby-plugin-intl"
+import React, { useState, useEffect } from "react"
+import MarqueeBlue from "./marquee_blue"
+import gatsu from "../images/gatsu_guy2.png"
+import Circle from "./circle"
 
+const url =
+  'https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={"id":40346689,"first":6}'
 
 const Followus = () => {
-  const data = useStaticQuery(graphql`
-    {
-      iconSet: file(relativePath: { eq: "icon-set-green.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 900) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      video: file(relativePath: { eq: "video-placeholder.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-      pic1: file(relativePath: { eq: "pic_02.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-
-      pic2: file(relativePath: { eq: "pic_03.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-
-      pic3: file(relativePath: { eq: "pic_01.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
-  const intl = useIntl()
-
+  const [insta, setInsta] = useState([])
+  useEffect(() => {
+    fetch(url)
+      .then(data => data.json())
+      .then(data => {
+        const photosArray = data.data.user.edge_owner_to_timeline_media.edges
+        setInsta(photosArray)
+        console.log("insta",insta)
+      })
+  }, [])
   return (
-    <section className="videoContainer relative bg-yellow xsm:mt-20">
-      <span className="wave-white-top"></span>
-      <p className=" w-2/3  xl:w-2/5   mx-auto text-red text-2xl  md:text-3xl text-center pt-32  pb-10">
-      {intl.formatMessage({ id: "follow" })}
-{" "}
-      </p>
-      <Img
-        className={" iconSet w-2/3 xl:w-1/3 mx-auto"}
-        fluid={data.iconSet.childImageSharp.fluid}
+    <section className="FollowUsWrap bg-orange">
+      <MarqueeBlue
+        bg="bg-blue"
+        text="* follow our shenanigans on instagram *"
       />
-      {/* <Img
-          className={" iconSet w-3/4 lg:w-2/5 mx-auto my-20"}
-          fluid={data.video.childImageSharp.fluid}
-        /> */}
-      <div className="pics w-11/12 lg:w-2/3 mx-auto mt-12 sm:mt-20 flex ">
-        <Img className={" w-1/3"} fluid={data.pic1.childImageSharp.fluid} />
-        <Img className={" w-1/3 mx-4 lg:mx-8" } fluid={data.pic2.childImageSharp.fluid} />
-        <Img className={" w-1/3"} fluid={data.pic3.childImageSharp.fluid} />
+      <div className="top w-full">
+        <div className="pic relative ml-48 max-w-max">
+          <div className=" w-44 relative z-10">
+            <img src={gatsu} alt="gatsu" />
+          </div>
+          <div className="absolute top-8 -left-10 z-0">
+            <Circle color="yellow" text="ENJOY" />
+          </div>
+        </div>
+        <div className="text -mt-10 ml-20">
+          <p className="text-skin text-3xl">
+            @ <br />
+            GATSUGATSU_ <br />
+            DELIVERY
+          </p>
+        </div>
       </div>
-      <div className="icon-div h-24 md:h-28 lg:h-32 xl:h-40 my-12 sm:my-20"></div>
-      <div>hi</div>
-      <span className="wave-green-bottom"></span>
+
+      <div className="IGwrap">
+        {insta.map(photo => (
+          <div className=" w-44 relative z-10">
+            <img src={photo.node.display_url} alt="pic" key={photo.node.id} />
+          </div>
+        ))}
+      </div>
     </section>
   )
 }
