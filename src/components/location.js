@@ -3,6 +3,7 @@ import MarqueeBlue from "./marquee_blue"
 import LocationItem from "./locationItem"
 import star from "../images/star.png"
 
+
 const Location = () => {
   return (
     <section className="location bg-blue">

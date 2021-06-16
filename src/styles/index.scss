@@ -10,16 +10,17 @@ $yellow:#ffd250;
 @import "video";
 @import "contact";
 @import "typography";
+@import url("https://use.typekit.net/fty4dqy.css");
 
 html, body {
     // overflow-x: hidden;
     // background-color: aqua;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'ABCGintoNord', sans-serif;
+    font-family: 'Dita', sans-serif;
   }
-  h1, h2, h3, h4, h5, p, button, input, optgroup, select, textarea{
-    font-family: 'ABCGintoNord', sans-serif;
+  h1, h2, h3, h4, h5, p, button, input, optgroup, select, textarea, span{
+    font-family: 'Dita', sans-serif;
   }
 *{
 	box-sizing: border-box;
@@ -67,6 +68,13 @@ html, body {
 
 .spin_back {
   animation: spin_back 10s linear infinite forwards;
+}
+
+
+.rotatedText > span {
+  display:inline-block;
+  -webkit-transform: rotate(-90deg);
+  margin: 0 3px;
 }
 
 @keyframes ticker {
