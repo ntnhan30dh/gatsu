@@ -2,6 +2,7 @@ import React from "react"
 import logo from "../images/logo.png"
 import btnOrder from "../images/btn-order.png"
 import btnMenu from "../images/btn-menu.png"
+import RotatedText from "./rotatedText"
 import { Link } from "gatsby"
 //import Sticky from "react-sticky-el"
 import Plx from "react-plx"
@@ -30,9 +31,7 @@ const Header = () => {
     <div className=" sticky top-0 z-50">
       <header className="  flex justify-between items-center px-2 bg-skin">
       <Link to="/" >
-        <div className=" w-24">
-          <img src={btnOrder} alt="logo"  />
-        </div>
+        <RotatedText text="ORDER" hover="hover:bg-blue" />
         </Link>
         <Link to="/" >
         <Plx parallaxData={parallaxScaleDown} className="w-24 -mb-6">
@@ -40,9 +39,7 @@ const Header = () => {
           </Plx>
         </Link>
         <Link to="/" >
-        <div className=" w-20 ">
-          <img src={btnMenu} alt="logo"  />
-        </div>
+        <RotatedText text="MENU" hover="hover:bg-blue"  />
         </Link>
       </header>
     </div>
