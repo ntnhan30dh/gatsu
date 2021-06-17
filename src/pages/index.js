@@ -33,7 +33,7 @@ export default function Home() {
     {/* <Plx parallaxData={parallaxMoveDown} className=" hidden md:block fixed translate-y-full top-4 lg:top-10 right-4 xl:right-20 orderNow  z-50 mb-80">
     <OrderNow />
         </Plx> */}
-    <Story toggleMenu={toggleMenu} menuState={menuActive}/>
+    <Story   page="main"/>
     <Menu/>
     <Gif/>
     <Location/>

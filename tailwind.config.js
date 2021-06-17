@@ -44,7 +44,11 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+
+      display: ['responsive', 'hover', 'focus'],  
+    },
+
   },
   plugins: [],
 }
