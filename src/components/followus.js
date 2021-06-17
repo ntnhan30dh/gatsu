@@ -3,19 +3,22 @@ import MarqueeBlue from "./marquee_blue"
 import gatsu from "../images/gatsu_guy2.png"
 import Circle from "./circle"
 
-const url =
-  'https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={"id":40346689,"first":6}'
 
 const Followus = () => {
-  const [insta, setInsta] = useState([])
+  const [insta, setInsta] = useState(undefined)
+  const token = "IGQVJXSVlWT1hYS1o3Q1FfZAmxNNkN1bTZALRFRoSXJNLUVFbmhtVXdEd1lqSjYxdWRaNVZATcW9IY21kN1FtRkxMOU55amRic3lwNW80V0xfZA3N0WXBsQklyU0JQbkdReDY4eS1wR1drUDFxNkQ3dUdQMQZDZD"
+  const url = `https://graph.instagram.com/me/media?fields=id,media_url&access_token=${token}`
+ 
   useEffect(() => {
     fetch(url)
       .then(data => data.json())
       .then(data => {
-        const photosArray = data.data.user.edge_owner_to_timeline_media.edges
-        setInsta(photosArray)
-        console.log("insta",insta)
+        // const photosArray = data.data.user.edge_owner_to_timeline_media.edges
+         setInsta(data.data)
+       //  console.log("insta",insta)
+        // console.log("data",data)
       })
+   
   }, [])
   return (
     <section className="FollowUsWrap bg-orange">
@@ -41,10 +44,10 @@ const Followus = () => {
         </div>
       </div>
 
-      <div className="IGwrap">
-        {insta.map(photo => (
-          <div className=" w-44 relative z-10">
-            <img src={photo.node.display_url} alt="pic" key={photo.node.id} />
+      <div className="IGwrap flex flex-wrap">
+        {insta&&insta.slice(0, 9).map(photo => (
+          <div className=" w-1/3 relative z-10">
+            <img src={photo.media_url} alt="pic" />
           </div>
         ))}
       </div>
