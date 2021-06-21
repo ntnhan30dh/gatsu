@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="pageWrapper">
       <head>
-      <title>Itacate</title>
+      <title>Gatsu Gatsu</title>
       </head>
     <TopBarOrder/>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>

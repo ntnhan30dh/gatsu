@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import gatsu_guy from "../images/gatsu_guy.png"
 import devour_pic from "../images/devour_pic.png"
+import devour_pic_mobile from "../images/devour_pic_mobile.png"
 import killer_pic from "../images/killer_pic.png"
 
 import Circle from "./circle"
@@ -26,25 +27,40 @@ const Story = props => {
   return (
     <section className="storyContainer">
       <StoryBg page={props.page} />
-      <div className="DevourContainer relative bg-skin p-8">
+      <div className="DevourContainer relative bg-skin p-8 md:p-16 md:flex">
+        <div className="textWrap md:w-2/3">
         <div className="headline ">
-          <h1 className="  text-blue text-4xl">READY STEADY DEVOUR</h1>
-          <div className=" w-36 absolute -top-10 right-0">
+          <h1 className="  text-blue text-6xl md:text-7xl lg:text-9xl pr-20 xsm:pr-40 md:pr-60">READY STEADY DEVOUR</h1>
+          <div className=" w-40 absolute -top-10 right-0 md:hidden">
             <img src={gatsu_guy} alt="logo" />
           </div>
         </div>
-        <div className="text">
-          <p className="text-justify text-sm text-orange">
+        <div className="text md:mr-20">
+          <p className="text-justify text-sm md:text-lg lg:text-xl text-orange tracking-widest uppercase">
             Your hunger won’t win against our assortment of classic Asian dishes
             and street food munchies. what are you watiting for?
           </p>
         </div>
-        <div className="picContainer relative">
+        </div>
+        <div className="picContainer relative md:w-1/3">
           <div className=" w-full my-6">
-            <img src={devour_pic} alt="logo" />
+            <img className="hidden md:block" src={devour_pic} alt="dish" />
+            <img className=" md:hidden" src={devour_pic_mobile} alt="dish" />
           </div>
-          <div className="circleDiv absolute -bottom-6 -right-6">
+          <div className="md:hidden circleDiv absolute -bottom-6 -right-6">
             <Circle color="yellow" text="CHECK OUT THE MENU" />
+          </div>
+          <div className=" hidden md:block circleDiv absolute -bottom-10 -left-20">
+            <Circle color="orange" text="CHECK OUT THE MENU" />
+          </div>
+          <div className=" hidden md:block w-48 absolute -top-10 -left-52">
+          <img src={gatsu_guy} alt="logo" />
+          </div>
+          <div className=" hidden md:block w-48 absolute -bottom-10 -right-20">
+          <img src={gatsu_guy} alt="logo" />
+          </div>
+          <div className=" hidden md:block w-48 absolute -bottom-30 left-10 z-20 transform rotate-25">
+          <img src={gatsu_guy} alt="logo" />
           </div>
         </div>
       </div>

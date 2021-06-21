@@ -12,7 +12,7 @@ module.exports = {
       10: "10px",
       15: "15px",
     },
-
+rotate:{"25":"25deg"},
     extend: {
       screens: {},
       colors: {
@@ -30,6 +30,7 @@ module.exports = {
       },
       height: {
         wFull: '100vw',
+        vh: '85vh',
        }
     },
     borderWidth: {

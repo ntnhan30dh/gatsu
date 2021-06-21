@@ -1,7 +1,5 @@
 import React from "react"
 import logo from "../images/logo.png"
-import btnOrder from "../images/btn-order.png"
-import btnMenu from "../images/btn-menu.png"
 import RotatedText from "./rotatedText"
 import { Link } from "gatsby"
 //import Sticky from "react-sticky-el"
@@ -12,7 +10,7 @@ const Header = () => {
   const parallaxScaleDown = [
     {
       start:'self',
-      duration: 200,
+      duration: 100,
       properties: [
         {
         startValue: 1,
@@ -29,16 +27,16 @@ const Header = () => {
   ];
   return (
     <div className=" sticky top-0 z-50">
-      <header className="  flex justify-between items-center px-2 bg-skin">
-      <Link to="/" >
+      <header className="  flex justify-between items-center px-4 md:px-10 lg:px-20 bg-skin">
+      <Link to="http://www.mjam.net/restaurant/wien/gatsu-gatsu" target="_blank" >
         <RotatedText text="ORDER" hover="hover:bg-blue" />
         </Link>
         <Link to="/" >
-        <Plx parallaxData={parallaxScaleDown} className="w-24 -mb-6">
+        <Plx parallaxData={parallaxScaleDown} className="w-24 md:w-28 lg:w-36 -mb-6">
         <img src={logo} alt="logo"  />
           </Plx>
         </Link>
-        <Link to="/" >
+        <Link to="/menu" >
         <RotatedText text="MENU" hover="hover:bg-blue"  />
         </Link>
       </header>

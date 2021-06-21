@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="pageWrapper">
       <head>
-      <title>Itacate</title>
+      <title>Gatsu Gatsu</title>
       </head>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
     <div className="legalInfo-div">
