@@ -78,6 +78,11 @@ html, body {
   margin: 0 3px;
 }
 
+.slick-dots{
+  display: none !important;
+}
+
+button:focus {outline:0;}
 @keyframes ticker {
    
   100% {
