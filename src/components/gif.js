@@ -6,12 +6,12 @@ import Circle from "./circle"
 const Gif = () => {
   return (
     <div className=" w-full session gif relative bg-skin pb-20 ">
-      <div className=" w-full">
+      <div className=" w-full relative">
         {/* <img src={gif} alt="gatsu" /> */}
         <img src={gif} alt="gatsu" />
-      </div>
-      <div className="absolute -bottom-6 z-40 ">
+      <div className="absolute -bottom-20 z-40 sm:top-2 sm:left-10">
         <Circle color="" text="ORDER DELIVERY NOW!" />
+      </div>
       </div>
     </div>
   )

@@ -27,7 +27,7 @@ const Story = props => {
   return (
     <section className="storyContainer">
       <StoryBg page={props.page} />
-      <div className="DevourContainer relative bg-skin p-8 md:p-16 lg:px-40 md:flex">
+      <div className="DevourContainer relative bg-skin p-8 md:p-16 lg:px-40  md:flex">
         <div className="textWrap md:w-2/3">
         <div className="headline ">
           <h1 className="ginto  text-blue text-4xl xsm:text-6xl md:text-7xl lg:text-9xl pr-20 xsm:pr-40 md:pr-60">READY STEADY DEVOUR</h1>
@@ -66,7 +66,7 @@ const Story = props => {
       </div>
 
       <Marquee bg="bg-blue" />
-      <div className="killerContainer bg-blue p-8 md:p-16 lg:px-40  md:flex flex-row-reverse">
+      <div className="killerContainer bg-blue p-8 md:p-16 lg:px-40   md:flex flex-row-reverse">
         <div className="headlineDiv flex justify-between md:w-2/3	">
           <div className="circleDiv md:hidden">
             <Circle color="" text="ORDER DELIVERY NOW!" />
