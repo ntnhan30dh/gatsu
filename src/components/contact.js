@@ -21,15 +21,17 @@ const Contact = () => {
     }
   `)
 
-  const textItem = "textItem  text-center my-8"
-  const p = "text-sm text-orange"
+  const textItem = "textItem  text-center my-8 "
+  const p = "text-xl md:text-2xl text-orange"
   return (
     <section className="contactContainer bg-skin" id="contact">
       <MarqueeLogo />
-      <div className="main bg-skin p-10">
-        <Img fluid={data.pic.childImageSharp.fluid} className="" />
-        <div className="textWrap">
-          <div className={textItem}>
+      <div className="main bg-skin p-10 md:p-20  lg:px-40 xl:px-60 2xl:px-72 ">
+        <div className=" xsm:w-2/3 md:w-1/3 mx-auto my-10">
+          <Img className="w-full" fluid={data.pic.childImageSharp.fluid} />
+        </div>
+        <div className="textWrap md:grid grid-rows-2 grid-cols-3">
+          <div className={`${textItem} row-start-1 col-start-1` }>
             <RotatedText text="CONTACT" />
             <p className={p}>
               Tel: +44988670034534 <br />
@@ -37,7 +39,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className={textItem}>
+          <div className={`${textItem} row-start-2 col-start-1`}>
             <RotatedText text="HOURS" />
             <p className={p}>
               Monday-Sunday <br />
@@ -45,7 +47,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className={textItem}>
+          <div className={`${textItem} row-start-1 col-start-3`}>
             <RotatedText text="NUTRITION" />
             <p className={p}>
               <a className={p} href={downloadFile} download>
@@ -59,7 +61,7 @@ const Contact = () => {
             <p className={p}>@gatsugatsu_delivery</p>
           </div>
 
-          <div className={textItem}>
+          <div className={`${textItem} row-start-1 col-start-2`}>
             <RotatedText text="IMPRINT" />
             <p className={p}>
               Honest Food Company <br />
@@ -69,18 +71,34 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className={textItem}>
+          <div className={`${textItem} row-start-2 col-start-2`}>
             <ul className="underline">
-              <li > <Link to='/imprint' className={p}> Imprint </Link> </li>
-              <li> <Link to='/privacy' className={p}> Privacy </Link> </li>
-              <li> <Link to='/disclaimer' className={p}> Terms and Conditions </Link> </li>
+              <li>
+                {" "}
+                <Link to="/imprint" className={p}>
+                  {" "}
+                  Imprint{" "}
+                </Link>{" "}
+              </li>
+              <li>
+                {" "}
+                <Link to="/privacy" className={p}>
+                  {" "}
+                  Privacy{" "}
+                </Link>{" "}
+              </li>
+              <li>
+                {" "}
+                <Link to="/disclaimer" className={p}>
+                  {" "}
+                  Terms and Conditions{" "}
+                </Link>{" "}
+              </li>
             </ul>
           </div>
-
-          <div className=" w-8 mx-auto">
-        
-        <img src={arrow} alt="arrow" />
-      </div>
+        </div>
+        <div className=" w-8 mx-auto md:-mt-20">
+          <img src={arrow} alt="arrow" />
         </div>
       </div>
     </section>

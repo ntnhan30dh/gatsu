@@ -21,7 +21,7 @@ const textColour = props.textColour==="yellow"?"text-yellow":"text-skin"
             <div className={`absolute w-full h-full  ${props.color==="yellow"?"spin_back":"spin"} `}>
               <img src={props.color==="yellow"?yellow:orange}  alt="circle_yellow}" />
             </div>
-            <div className="content absolute top-0 w-full h-full flex items-center justify-center transform -rotate-12	">
+            <div className={`content absolute top-0 w-full h-full flex items-center justify-center transform ${props.rotate}	`}>
               {" "}
               <span className={`text-center px-4 lg:text-xl md:px-8 ${props.color==="yellow"?textOrange:textSkin} `}> {props.text}</span>
             </div>

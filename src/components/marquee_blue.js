@@ -37,7 +37,7 @@ const MarqueeBlue = (props) =>{
           <span className={spanClass}>{props.text}</span>
         </div>
 
-        <div className="marquee_list flex">
+        {/* <div className="marquee_list flex">
           <span className={spanClass}>
             {props.text}
           </span>
@@ -51,7 +51,7 @@ const MarqueeBlue = (props) =>{
           <span className={spanClass}>{props.text}</span>
           <span className={spanClass}>{props.text}</span>
           <span className={spanClass}>{props.text}</span>
-        </div>
+        </div> */}
       </div>
     )
 }

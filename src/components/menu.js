@@ -9,8 +9,6 @@ import Circle from "./circle"
 import Marquee from "./marquee"
 import Arrow from "./arrow"
 
-import previous from "../images/arrow_back_border.png"
-import next from "../images/arrow_next_border.png"
 
 const Menu = () => {
   let [isHover, setIsHover] = useState(false)

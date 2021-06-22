@@ -38,7 +38,7 @@ export default function Home() {
     <Gif/>
     <Location/>
     <Contact/>
-    <Followus/>
+    <Followus bg="bg-orange"/>
     </div>
   )
 }
