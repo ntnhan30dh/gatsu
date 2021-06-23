@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React, { useRef } from "react"
+
+import { Link } from "gatsby"
 //import Img from "gatsby-image"
 import Slider from "react-slick"
 
@@ -9,20 +10,9 @@ import Circle from "./circle"
 import Marquee from "./marquee"
 import Arrow from "./arrow"
 
-
 const Menu = () => {
-  let [isHover, setIsHover] = useState(false)
-  const data = useStaticQuery(graphql`
-    {
-      padThai: file(relativePath: { eq: "menu_padthai.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+ 
+  
 
   //creating the ref
   const customeSlider = useRef()
@@ -69,7 +59,6 @@ const Menu = () => {
       },
     ],
   }
-  const arrow = "w-16 relative mx-10"
   return (
     <section className="menuContainer bg-orange" id="menu">
       <Marquee bg="bg-orange" />
@@ -98,7 +87,13 @@ const Menu = () => {
         <div className=" w-full grid grid-rows-1 grid-cols-3 lg:grid-cols-4 ">
           <div className="row-start-1 col-start-1 md:col-start-3 lg:col-start-4 relative">
             <div className="absolute bottom-0 md:-left-20 mmd:-bottom-16">
-              <Circle color="yellow" text="CHECK OUT THE MENU" />
+              <Link to="/menu">
+                <Circle
+                  color="yellow"
+                  text="CHECK OUT THE MENU"
+                  rotate="-rotate-12 md:rotate-12"
+                />
+              </Link>
             </div>
           </div>
         </div>

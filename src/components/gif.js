@@ -2,6 +2,7 @@ import React from "react"
 import gif from "../images/gif.gif"
 //import pic from "../images/gif_pic.png"
 import Circle from "./circle"
+import { Link } from "gatsby"
 
 const Gif = () => {
   return (
@@ -9,8 +10,10 @@ const Gif = () => {
       <div className=" w-full relative">
         {/* <img src={gif} alt="gatsu" /> */}
         <img src={gif} alt="gatsu" />
-      <div className="absolute -bottom-20 z-40 sm:top-2 sm:left-10">
-        <Circle color="" text="ORDER DELIVERY NOW!" />
+      <div className="absolute -bottom-20 z-40 sm:top-1/20 sm:left-1/20">
+      <Link to="http://www.mjam.net/restaurant/wien/gatsu-gatsu" target="_blank" >
+        <Circle color="" text="ORDER DELIVERY NOW!" rotate="-rotate-12"/>
+        </Link>
       </div>
       </div>
     </div>

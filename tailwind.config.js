@@ -15,7 +15,9 @@ module.exports = {
     rotate: { 
       '12': "12deg" ,
       '-12': "-12deg" ,
-      '25': "25deg" 
+      '25': "25deg" ,
+      '30': "30deg" ,
+      '45': "45deg" 
     },
     extend: {
       screens: {},

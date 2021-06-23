@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
+
 
 import Slider from "react-slick"
 
@@ -13,17 +14,7 @@ import gatsu_guy from "../images/gatsu_guy.png"
 import arrowDown from "../images/arrow_down.png"
 
 const Menu_menuPage = () => {
-  const data = useStaticQuery(graphql`
-    {
-      padThai: file(relativePath: { eq: "menu_padthai.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+
 
   //creating the ref
   const customeSlider = useRef()
@@ -52,23 +43,25 @@ const Menu_menuPage = () => {
     <section className="menuContainer bg-orange" id="menu">
       <div className="top relative bg-skin p-6 sm:p-10 md:p-20 lg:p-30 xl:px-72">
         <div className="headline ">
-          <h1 className=" ginto uppercase text-blue text-4xl xsm:text-6xl md:text-7xl lg:text-8xl max-w-max relative">
+          <h1 className=" ginto uppercase text-blue text-4xl xsm:text-6xl md:text-7xl lg:text-9xl max-w-max relative">
             CHeck <br /> out our <br /> Menu{" "}
           <span className="hidden md:block absolute bottom-0 right-0 w-14 ">
           <img src={arrowDown} alt="arrow" />
         </span>
           </h1>
-          <div className=" w-40 md:w-52 lg:w-64 absolute -top-10 md:top-1/20 right-0 md:right-1/20 ">
-          <div className="relative">
-            <img src={gatsu_guy} alt="logo" />
-            <div className=" hidden md:block absolute top-1/3 right-2/3">
+          <div className=" w-40 md:w-52 lg:w-64 absolute -top-10 md:top-1/10 right-0 md:right-1/10 ">
+          <div className="relative  ">
+            <img src={gatsu_guy} alt="logo" className="relative z-20 transform md:rotate-30" />
+            <div className=" hidden md:block absolute -top-6 -left-24">
+            <Link to="http://www.mjam.net/restaurant/wien/gatsu-gatsu" target="_blank" >
             <Circle color="orange" text="ORDER DELIVERY NOW" rotate="-rotate-12"/>
+        </Link>
           </div>
           </div>
           </div>
         </div>
         <div className="text my-10">
-          <p className="uppercase tracking-widest text-justify text-sm md:text-lg lg:text-xl text-orange ">
+          <p className="uppercase tracking-widest text-justify text-sm md:text-lg lg:text-xl text-orange md:pr-20 lg:pr-40 ">
             all the classic dishes you know+love, like pad thai and curries,
             join forces with tasty street food finds like Thai Burgers and
             waffle fries.

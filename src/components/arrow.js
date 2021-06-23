@@ -13,7 +13,7 @@ const Arrow = (props) => {
          <div className={`previousWrap hidden md:flex absolute top-0 ${props.type==="previous"?"left-0":"right-0"} z-20 h-full flex items-center`} >
           <button className="" onClick={props.onClickHandle} onMouseOver={()=>setIsHover(true) } onMouseOut={()=>setIsHover(false)}>
             {" "}
-            <div className="w-14 relative mx-16">
+            <div className="w-14 relative mx-10 md:mx-6 lg:mx-12">
             <img src={props.type==="previous"?previousButton:nextButton} alt="arrow"  className=" relative z-20"/>
             <div className={`${props.bgColour} w-full h-full absolute top-2 left-2 z-10  ${isHover?"hidden":""}`}></div>
             </div>

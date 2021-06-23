@@ -97,7 +97,7 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className=" w-8 mx-auto md:-mt-20">
+        <div className=" w-8 mx-auto md:-mt-10 md:w-12">
           <img src={arrow} alt="arrow" />
         </div>
       </div>

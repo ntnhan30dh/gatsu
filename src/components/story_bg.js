@@ -37,7 +37,7 @@ const StoryBg = props => {
         fluid={imageData}
         background-size="cover"
         opacity={0.5}
-        className="bgContainer h-wFull lg:h-vh "
+        className="bgContainer h-wFull xl:h-vh "
       >
         <div className=" w-full h-full grid grid-rows-2 grid-cols-2 ">
           <div className="row-start-1 col-start-1 relative">
@@ -46,6 +46,7 @@ const StoryBg = props => {
               <Circle
                 color={mainPage ? "yellow" : "orange"}
                 text={mainPage ? "CHECK OUT THE MENU" : "YUMMY"}
+                rotate="-rotate-12"
               />
         </Link>
             </div>
@@ -53,19 +54,22 @@ const StoryBg = props => {
           <div className="circleDiv row-start-2 col-start-2 relative">
             <div className="absolute lg:hidden right-6 xsm:right-20 bottom-4 xsm:bottom-20">
             <Link to="http://www.mjam.net/restaurant/wien/gatsu-gatsu" target="_blank" >
-              <Circle color="" text="ORDER DELIVERY NOW!" />
+              <Circle color="" text="ORDER DELIVERY NOW!"
+              rotate="rotate-12"
+              
+               />
         </Link>
             </div>
           </div>
           
           <div className="circleDiv row-start-1 col-start-2 relative">
-            <div className=" hidden lg:block absolute right-40  top-40 ">
-              <Circle color="" text="CRUNCHY" textColour="yellow" />
+            <div className=" hidden lg:block absolute right-40  top-60 ">
+              <Circle color="" text="CRUNCHY" textColour="yellow" rotate="rotate-12"/>
             </div>
           </div>
           <div className="circleDiv row-start-2 col-start-1 relative">
             <div className=" hidden lg:block absolute left-20  bottom-20 ">
-              <Circle color="" text="DELICIOUS" textColour="yellow" />
+              <Circle color="" text="DELICIOUS" textColour="yellow" rotate="-rotate-12"/>
             </div>
           </div>
         </div>

@@ -46,13 +46,13 @@ const MenuMenuItem = props => {
   }
 
   return (
-    <div className="menuItem relative w-full flex">
-      <div className="text w-1/2 my-auto p-2 md:px-32 lg:px-40">
-        <div className=" w-6 lg:w-10">
+    <div className="menuMenuItemWrap relative w-full flex">
+      <div className="text w-1/2 my-auto p-2 xsm:p-4 md:px-24 lg:px-40 xl:px-44">
+        <div className=" w-6 lg:w-10 xl:w-16">
           <img src={star} alt="star" />
         </div>
-        <span className=" name ginto  uppercase text-xl md:text-5xl lg:text-8xl text-blue my-6">{props.name}</span>
-        <p className="description text-white text-sm md:text-base uppercase tracking-widest bold xxsm:my-4">
+        <h1 className=" name ginto  uppercase text-xl md:text-5xl lg:text-7xl xl:text-9xl text-blue my-6  ">{props.name}</h1>
+        <p className="md:description font-bold text-white text-xs xsm:text-sm md:text-base xl:text-xl uppercase tracking-widest bold xxsm:my-4 lg:my-10 xl:pr-40 ">
         {props.text}
         </p>
       </div>
