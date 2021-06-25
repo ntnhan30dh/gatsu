@@ -38,7 +38,7 @@ const Menu_menuPage = () => {
 
   return (
     <section className="menuContainer bg-orange" id="menu">
-      <div className="top relative bg-skin p-6 sm:p-10 md:p-20 lg:p-30 xl:px-72">
+      <div className="top relative bg-skin p-6 sm:p-10 md:p-20 lg:p-30 xl:px-64 2xl:px-72">
         <div className="headline ">
           <h1 className=" ginto uppercase text-blue text-4xl xsm:text-6xl md:text-7xl lg:text-9xl max-w-max relative">
             CHeck <br /> out our <br /> Menu{" "}
