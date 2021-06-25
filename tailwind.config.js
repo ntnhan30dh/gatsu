@@ -55,9 +55,15 @@ module.exports = {
       inset: {
         '1/10': '10%',
         '1/20': '5%',
+        '1/4': '25%',
+       },
+       margin: {
+        '1/4': '25%',
+        '19%': '19%',
        },
        fontSize: {
         '7.5xl': '5rem',
+        '7vw': '7vw',
        }
     },
     borderWidth: {
