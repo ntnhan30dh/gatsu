@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-
+import BackgroundImage from "gatsby-background-image"
 const MenuItem = props => {
   const data = useStaticQuery(graphql`
     {
-      padThai: file(relativePath: { eq: "menu_padthai.png" }) {
+      padThai: file(relativePath: { eq: "menuPic_PadThai.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -13,7 +13,110 @@ const MenuItem = props => {
         }
       }
 
-      sesame: file(relativePath: { eq: "menu_sesame.png" }) {
+      GlassNoodle: file(relativePath: { eq: "menuPic_GlassNoodle.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      Katsu: file(relativePath: { eq: "menuPic_Katsu.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      Lucky: file(relativePath: { eq: "menuPic_Lucky.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      HappyYogi: file(relativePath: { eq: "menuPic_HappyYogi.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      GoNuts: file(relativePath: { eq: "menuPic_GoNuts.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      GreenDelight: file(relativePath: { eq: "menuPic_GreenDelight.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      ThaiBurger: file(relativePath: { eq: "menuPic_ThaiBurger.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      SpiceItUp: file(relativePath: { eq: "menuPic_SpiceitUp.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TeriyakiBurger: file(relativePath: { eq: "menuPic_TeriyakiBurger.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      GoldenGate: file(relativePath: { eq: "menuPic_GoldenGate.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      Kpop: file(relativePath: { eq: "menuPic_SpiceitUp.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      Rock_n_Rolls: file(relativePath: { eq: "menuPic_Rock_n_Rolls.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      Dumplings: file(relativePath: { eq: "menuPic_Dumplings.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      GatsuSide: file(relativePath: { eq: "menuPic_GatsuSide.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -27,17 +130,63 @@ const MenuItem = props => {
     switch (picName) {
       case "padThai":
         return data.padThai.childImageSharp.fluid
-      case "sesame":
-        return data.sesame.childImageSharp.fluid
-      default:
+      case "GlassNoodle":
+        return data.GlassNoodle.childImageSharp.fluid
+      case "Katsu":
+        return data.Katsu.childImageSharp.fluid
+      case "Lucky":
+        return data.Lucky.childImageSharp.fluid
+      case "HappyYogi":
+        return data.HappyYogi.childImageSharp.fluid
+      case "GoNuts":
+        return data.GoNuts.childImageSharp.fluid
+        case "GreenDelight":
+          return data.GreenDelight.childImageSharp.fluid
+          case "ThaiBurger":
+        return data.ThaiBurger.childImageSharp.fluid
+        case "SpiceItUp":
+        return data.SpiceItUp.childImageSharp.fluid
+        case "TeriyakiBurger":
+        return data.TeriyakiBurger.childImageSharp.fluid
+        case "GoldenGate":
+        return data.GoldenGate.childImageSharp.fluid
+        case "KPop":
+        return data.Kpop.childImageSharp.fluid
+        case "Rock_n_Rolls":
+        return data.Rock_n_Rolls.childImageSharp.fluid
+        case "Dumplings":
+        return data.Dumplings.childImageSharp.fluid
+        case "GatsuSide":
+        return data.GatsuSide.childImageSharp.fluid
+    
+
+        default:
         return data.padThai.childImageSharp.fluid
     }
   }
 
   return (
-    <div className="menuItem relative w-full  px-8 xsm:px-2">
-      <Img fluid={pic(props.pic)} className="menu-pic border-6  border-solid border-skin" />
-      <div className="text  uppercase text-3xl lg:text-4xl absolute bottom-0 w-full text-skin mb-4 pr-16 "> <span className=" ginto block  w-1/6  mx-auto text-right"> {props.name} </span></div>
+    <div className="menuItem relative w-full px-4 md:px-2  ">
+      {/* {props.pic==="padThai"&&<Img fluid={pic(props.pic)} className="menu-pic border-6  border-solid border-skin mx-8 xsm:mx-2" />} */}
+      {/* {props.pic !== "padThai"&& */}
+      <BackgroundImage
+        fluid={pic(props.pic)}
+        background-size="cover"
+        opacity={0.5}
+        className="w-full h-0 pb-140 menu-pic border-6  border-solid border-skin "
+      ></BackgroundImage>
+      {/* } */}
+      <div className="text uppercase text-xl md:text-2xl lg:text-3xl  absolute bottom-0 w-full text-skin mb-8 md:px-14 ">
+        {" "}
+        <div className="block   mx-auto  text-center">
+          {" "}
+          {props.name.split("*").map(str => (
+            <span className="ginto">
+              {str} <br />{" "}
+            </span>
+          ))}{" "}
+        </div>
+      </div>
     </div>
   )
 }

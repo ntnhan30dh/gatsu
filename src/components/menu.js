@@ -60,9 +60,10 @@ const Menu = () => {
     ],
   }
   return (
-    <section className="menuContainer bg-orange" id="menu">
+    <section className="menuContainer bg-orange " id="menu">
       <Marquee bg="bg-orange" />
-      <div className="sliderWrap relative">
+      <div className="sliderWrap  md:mb-12">
+<div className="relative">
         <Arrow
           onClickHandle={() => gotoNext()}
           type="next"
@@ -74,19 +75,30 @@ const Menu = () => {
           bgColour="bg-orange"
         />
 
-        <Slider {...settings} ref={customeSlider} className="my-8 md:my-16">
-          <MenuItem name="Phad Thai" pic="padThai" />
-          <MenuItem name="SESAME SALAD" pic="sesame" />
-          <MenuItem name="Pad Thai" pic="padThai" />
-          <MenuItem name="SESAME SALAD" pic="sesame" />
-          <MenuItem name="Pad Thai" pic="padThai" />
-          <MenuItem name="SESAME SALAD" pic="sesame" />
-          <MenuItem name="Pad Thai" pic="padThai" />
-          <MenuItem name="SESAME SALAD" pic="sesame" />
+        <Slider {...settings} ref={customeSlider} className="my-8 md:my-16 ">
+          <MenuItem name="Oh My,*Pad Thai" pic="padThai" />
+          <MenuItem name="Glass Noodle* Salad Bowl" pic="GlassNoodle" />
+          <MenuItem name="Katsu Katsu* Bowl" pic="Katsu" />
+          <MenuItem name="Lucky Teriyaki* Bowl" pic="Lucky" />
+          <MenuItem name="Happy Yogi* Bowl" pic="HappyYogi" />
+          <MenuItem name="Go Nuts* Red Curry" pic="GoNuts" />
+          <MenuItem name="Green Delight* Curry" pic="GreenDelight" />
+
+          <MenuItem name="Tasty Thai* Burger" pic="ThaiBurger" />
+          <MenuItem name="Spice it* Up Burger" pic="SpiceItUp" />
+          <MenuItem name="Lucky Teriyaki *Burger" pic="TeriyakiBurger" />
+          <MenuItem name="Golden* Gate Fries" pic="GoldenGate" />
+          <MenuItem name="K-Pop* Chicken" pic="KPop" />
+
+          <MenuItem name="Rock'n'*Rolls" pic="Rock_n_Rolls" />
+          <MenuItem name="Cheeky Chicken * Dumplings" pic="Dumplings" />
+          <MenuItem name="Gatsu *Side Salad" pic="GatsuSide" />
+          
         </Slider>
-        <div className=" w-full grid grid-rows-1 grid-cols-3 lg:grid-cols-4 ">
-          <div className="row-start-1 col-start-1 md:col-start-3 lg:col-start-4 relative">
-            <div className="absolute bottom-0 md:-left-20 mmd:-bottom-16">
+</div>
+        <div className=" w-full grid grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+          <div className="row-start-1 col-start-1 xsm:col-start-2 md:col-start-3 lg:col-start-4 relative">
+            <div className="absolute bottom-0 xsm:-left-10 md:-left-52 lg:-left-16 lg:-bottom-12 z-20">
               <Link to="/menu">
                 <Circle
                   color="yellow"

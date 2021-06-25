@@ -3,7 +3,7 @@ import React from "react"
 const Marquee = (props) =>{
     return (
      <div className={`marquee flex relative  overflow-hidden py-2 md:py-4 flex-nowrap text-yellow ${props.bg} lg:text-2xl`}>
-        <div className="marquee_list flex">
+        <div className="marquee_list flex ">
           <span className="whitespace-nowrap marquee_item flex items-center mr-2">
             GATSU GATSU*
           </span>

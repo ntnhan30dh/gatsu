@@ -37,6 +37,8 @@ module.exports = {
       height: {
         wFull: "100vw",
         vh: "85vh",
+        '32': "34vw",
+        '370': "370px",
       },
       width: {
         "1/7": "14.2857143%",
@@ -46,9 +48,16 @@ module.exports = {
         "5/7": "71.4285714%",
         "6/7": "85.7142857%",
       },
+      padding: {
+        '140': '140%',
+        
+       },
       inset: {
         '1/10': '10%',
         '1/20': '5%',
+       },
+       fontSize: {
+        '7.5xl': '5rem',
        }
     },
     borderWidth: {
@@ -60,7 +69,7 @@ module.exports = {
       6: "6px",
       8: "8px",
     },
-    
+   
   },
   variants: {
     extend: {

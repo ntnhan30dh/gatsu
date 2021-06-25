@@ -26,7 +26,7 @@ const Story = props => {
           </div>
         </div>
         <div className="text md:mr-20 md:mt-10">
-          <p className="text-justify text-sm md:text-lg lg:text-xl xl:pr-40 text-orange tracking-widest uppercase">
+          <p className="text-justify text-sm md:text-lg lg:text-xl xl:pr-40 text-orange font-bold uppercase">
             Your hunger won’t win against our assortment of classic Asian dishes
             and street food munchies. what are you watiting for?
           </p>
@@ -47,13 +47,13 @@ const Story = props => {
             <Circle color="orange" text="CHECK OUT THE MENU" rotate="rotate-12" />
         </Link>
           </div>
-          <div className=" hidden md:block w-48 lg:w-52 absolute -top-10 -left-48">
+          <div className=" hidden md:block w-48 lg:w-72  absolute -top-10 -left-48 lg:-top-24 lg:-left-64">
           <img src={gatsu_guy} alt="logo" />
           </div>
-          <div className=" hidden md:block w-48 lg:w-52 absolute -bottom-10 -right-20">
+          <div className=" hidden md:block w-48 lg:w-72  absolute -bottom-10 -right-20 lg:-bottom-20 lg:-right-40">
           <img src={gatsu_guy} alt="logo" />
           </div>
-          <div className=" hidden md:block w-48 lg:w-52 absolute -bottom-40 left-10 z-20 transform rotate-25">
+          <div className=" hidden md:block w-48 lg:w-72  absolute -bottom-40 left-10 z-20 lg:-bottom-52 lg:left-1/5  transform rotate-25">
           <img src={gatsu_guy} alt="logo" />
           </div>
         </div>

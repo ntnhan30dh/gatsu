@@ -1,8 +1,8 @@
 $phone: 750px;
 $tablet: 800px;
 $break-large: 1100px;
-$green:#009341;
-$yellow:#ffd250;
+$green: #009341;
+$yellow: #ffd250;
 
 @import "header";
 @import "story";
@@ -11,35 +11,41 @@ $yellow:#ffd250;
 @import "typography";
 @import url("https://use.typekit.net/fty4dqy.css");
 
-html, body {
-    // overflow-x: hidden;
-    // background-color: aqua;
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'Dita', sans-serif;
-  }
-  h1, h2, h3, h4, h5, p, button, input, optgroup, select, textarea, span{
-    font-family: 'Dita', sans-serif;
-  }
-*{
-	box-sizing: border-box;
-	;
+html,
+body {
+  // overflow-x: hidden;
+  // background-color: aqua;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Dita", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+input,
+optgroup,
+select,
+textarea,
+span {
+  font-family: "Dita", sans-serif;
+}
+* {
+  box-sizing: border-box;
 }
 
-
-
-.ginto{
+.ginto {
   font-family: ABCGintoNord;
-  
-
 }
 
 .pageWrapper {
   position: relative;
 }
 
-
-.legalInfo-div{
+.legalInfo-div {
   width: 60%;
   margin: 0 auto;
   padding: 5% 0;
@@ -47,21 +53,19 @@ html, body {
   @media screen and (max-width: 700px) {
     width: 80%;
   }
-  
 }
 
 .marquee .marquee_list {
   // -webkit-animation: ticker 20s infinite linear;
-   animation: ticker 20s infinite linear;
-   animation-duration: 20s;
+  animation: ticker 20s infinite linear;
+  animation-duration: 20s;
 }
 
 .marquee .marquee_list_logo {
   // -webkit-animation: ticker 20s infinite linear;
-   animation: ticker 10s infinite linear;
-   animation-duration: 10s;
+  animation: ticker 10s infinite linear;
+  animation-duration: 10s;
 }
-
 
 .spin {
   animation: spin 10s linear infinite forwards;
@@ -71,20 +75,43 @@ html, body {
   animation: spin_back 10s linear infinite forwards;
 }
 
-
 .rotatedText > span {
-  display:inline-block;
+  display: inline-block;
   -webkit-transform: rotate(-90deg);
   margin: 0 3px;
 }
 
-.slick-dots{
-  display: none !important;
+.circleDiv {
+  line-height: 1.39;
+  letter-spacing: 3.6px;
 }
 
-button:focus {outline:0;}
+.marquee_list {
+  letter-spacing: 4.31px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.slick-dots {
+  display: none !important;
+}
+.slick-track {
+  display: flex !important;
+}
+
+
+
+.slick-slide {
+  height: inherit !important;
+ 
+    & > div {height: 100%;}
+
+}
+
+button:focus {
+  outline: 0;
+}
 @keyframes ticker {
-   
   100% {
     transform: translateX(-100%);
   }

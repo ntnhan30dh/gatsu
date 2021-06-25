@@ -15,15 +15,14 @@ const textColour = props.textColour==="yellow"?"text-yellow":"text-skin"
 
 
     return (
-      // onMouseOver={e => (e.currentTarget.src = circle_yellow) }  onMouseOut={e => (e.currentTarget.src = circle_orange) }
-   <div className="circleDiv relative w-28 h-28 md:w-40 md:h-40 xl:w-52 xl:h-52 "  onMouseOver={()=>setIsHover(true) }  onMouseOut={()=>setIsHover(false)} >
+   <div className="circleDiv relative w-28 h-28 md:w-44 md:h-44 xl:w-48 xl:h-48 "  onMouseOver={()=>setIsHover(true) }  onMouseOut={()=>setIsHover(false)} >
             {" "}
             <div className={`absolute w-full h-full  ${props.color==="yellow"?"spin_back":"spin"} `}>
               <img src={props.color==="yellow"?yellow:orange}  alt="circle_yellow}" />
             </div>
             <div className={`content absolute top-0 w-full h-full flex items-center justify-center transform ${props.rotate}	`}>
               {" "}
-              <span className={`text-center px-4 lg:text-xl md:px-8 ${props.color==="yellow"?textOrange:textSkin} `}> {props.text}</span>
+              <span className={`text-center px-4 text-xs md:text-base lg:text-xl md:px-8 lg:px-4 xl:px-8 font-bold ${props.color==="yellow"?textOrange:textSkin} `}> {props.text}</span>
             </div>
           </div>
     )
