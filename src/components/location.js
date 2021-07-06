@@ -22,7 +22,7 @@ const Location = () => {
         <div className=" w-10  xl:w-20">
           <img src={star} alt="star" />
         </div>
-        <span className="ginto text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-orange ">
+        <span className="ginto text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-orange ">
           {" "}
           DELIVERY <br /> LOCATIONS
         </span>

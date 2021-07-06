@@ -160,8 +160,6 @@ const MenuMenuItem = props => {
         return data.Dumplings.childImageSharp.fluid
         case "GatsuSide":
         return data.GatsuSide.childImageSharp.fluid
-    
-
         default:
         return data.padThai.childImageSharp.fluid
     }

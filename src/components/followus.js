@@ -22,10 +22,10 @@ const Followus = props => {
       })
   }, [])
   return (
-    <section className={`FollowUsWrap  ${props.bg}`}>
+    <section className={`followUsWrap  ${props.bg}`}>
       <MarqueeBlue
         bg="bg-blue"
-        text="* follow our shenanigans on instagram *"
+        text="* follow our shenanigans on instagram * "
       />
       <div className="top w-full sm:flex flex-row-reverse sm:p-10 md:p-14 lg:p-30 xl:px-34 xl:pb-40 2xl:px-60 justify-between ">
         <div className="pic relative ml-48 sm:ml-0 max-w-max ">
@@ -37,15 +37,15 @@ const Followus = props => {
           </div>
         </div>
         <div className="text -mt-10 ml-8 pb-10 sm:-mt-0 sm:ml-0 lg:pb-20 ">
-          <p
+          <span
             className={`ginto ${
               props.bg === "bg-orange" ? "text-skin" : `text-orange`
-            } text-3xl xsm:text-5xl sm:text-4xl md:text-5xl  lg:text-7xl xl:text-8xl`}
+            } text-3xl xsm:text-5xl sm:text-4xl md:text-5xl  lg:text-7xl xl:text-6vw`}
           >
             <div className="my-4 sm:my-8"> @ </div>
             GATSUGATSU _  <br />
             DELIVERY
-          </p>
+          </span>
         </div>
       </div>
 

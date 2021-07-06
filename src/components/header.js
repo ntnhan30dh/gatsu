@@ -29,7 +29,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className=" sticky top-0 z-50 border-b-2 border-solid border-orange">
+    <div className=" sticky top-0 z-50 border-b-3 border-solid border-orange">
       <header className="  flex justify-between items-center px-4 md:px-10 lg:px-20 bg-skin //lg:h-20">
       <Link to="http://www.mjam.net/restaurant/wien/gatsu-gatsu" target="_blank" >
         {/* <RotatedText text="ORDER" hover="hover:bg-blue" /> */}

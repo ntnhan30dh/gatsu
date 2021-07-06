@@ -61,6 +61,14 @@ span {
   animation-duration: 20s;
 }
 
+.followUsWrap{
+  .marquee .marquee_list {
+    // -webkit-animation: ticker 20s infinite linear;
+    animation: ticker 40s infinite linear;
+    animation-duration: 40s;
+  }
+}
+
 .marquee .marquee_list_logo {
   // -webkit-animation: ticker 20s infinite linear;
   animation: ticker 10s infinite linear;
@@ -90,6 +98,12 @@ span {
   letter-spacing: 4.31px;
   font-weight: bold;
   font-style: italic;
+}
+
+//story headlines
+
+.leading-80{
+  line-height: 100px !important
 }
 
 .slick-dots {

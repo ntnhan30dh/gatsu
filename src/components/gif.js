@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 const Gif = () => {
   return (
-    <div className=" w-full session gif relative bg-skin pb-20 ">
+    <div className=" w-full session gif relative bg-skin ">
       <div className=" w-full relative">
         {/* <img src={gif} alt="gatsu" /> */}
         <img src={gif} alt="gatsu" />

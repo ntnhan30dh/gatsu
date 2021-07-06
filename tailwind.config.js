@@ -33,6 +33,7 @@ module.exports = {
       lineHeight: {
         "extra-loose": "2.5",
         12: "3rem",
+        100: "100px !important"
       },
       height: {
         wFull: "100vw",
@@ -64,6 +65,7 @@ module.exports = {
        fontSize: {
         '7.5xl': '5rem',
         '7vw': '7vw',
+        '8vw': '8vw',
        }
     },
     borderWidth: {

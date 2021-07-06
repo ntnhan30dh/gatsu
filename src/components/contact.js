@@ -1,6 +1,11 @@
 import React from "react"
 import MarqueeLogo from "./marquee_logo"
-import RotatedText from "./rotatedText"
+import btn_contact from "../images/btn_contact.png"
+import btn_imprint from "../images/btn_imprint.png"
+import btn_nutrition from "../images/btn_nutrition.png"
+import btn_hours from "../images/btn_hours.png"
+import btn_followus from "../images/btn_followus.png"
+//import RotatedText from "./rotatedText"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import downloadFile from "../downloads/Gatsu_Gatsu_Website_Instructions.pdf"
@@ -31,16 +36,22 @@ const Contact = () => {
           <Img className="w-full" fluid={data.pic.childImageSharp.fluid} />
         </div>
         <div className="textWrap md:grid grid-rows-2 grid-cols-3">
-          <div className={`${textItem} row-start-1 col-start-1` }>
-            <RotatedText text="CONTACT" />
+          <div className={`${textItem} row-start-1 col-start-1`}>
+            {/* <RotatedText text="CONTACT" /> */}
+            <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
+              <img src={btn_contact} alt="logo" />
+            </div>
             <p className={p}>
               Tel: +44988670034534 <br />
               Mail: gatsugatsu@mail.com
             </p>
           </div>
 
-          <div className={`${textItem} row-start-2 col-start-1`}>
-            <RotatedText text="HOURS" />
+          <div className={`${textItem} row-start-2 col-start-1 md:-mt-12`}>
+            {/* <RotatedText text="HOURS" /> */}
+            <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
+              <img src={btn_hours} alt="logo" />
+            </div>
             <p className={p}>
               Monday-Sunday <br />
               11: 00-23: 00
@@ -48,7 +59,10 @@ const Contact = () => {
           </div>
 
           <div className={`${textItem} row-start-1 col-start-3`}>
-            <RotatedText text="NUTRITION" />
+            {/* <RotatedText text="NUTRITION" /> */}
+            <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
+              <img src={btn_nutrition} alt="logo" />
+            </div>
             <p className={p}>
               <a className={p} href={downloadFile} download>
                 Download PDF
@@ -56,13 +70,19 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className={textItem}>
-            <RotatedText text="FOLLOW US" />
+          <div className={`${textItem} md:-mt-14`}>
+            {/* <RotatedText text="FOLLOW US" /> */}
+            <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
+              <img src={btn_followus} alt="logo" />
+            </div>
             <p className={p}>@gatsugatsu_delivery</p>
           </div>
 
           <div className={`${textItem} row-start-1 col-start-2`}>
-            <RotatedText text="IMPRINT" />
+            {/* <RotatedText text="IMPRINT" /> */}
+            <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
+              <img src={btn_imprint} alt="logo" />
+            </div>
             <p className={p}>
               Honest Food Company <br />
               GmbH <br />
@@ -71,7 +91,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className={`${textItem} row-start-2 col-start-2`}>
+          <div className={`${textItem} row-start-2 col-start-2 md:-mt-2`}>
             <ul className="underline">
               <li>
                 {" "}
@@ -97,7 +117,7 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className=" w-8 mx-auto md:-mt-10 md:w-12">
+        <div className=" w-8 mx-auto md:-mt-16 md:w-12">
           <img src={arrow} alt="arrow" />
         </div>
       </div>

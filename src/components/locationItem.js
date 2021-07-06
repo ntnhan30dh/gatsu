@@ -12,7 +12,7 @@ const LocationItem = (props) => {
                 <MarqueeLocation bg="bg-skin" text={props.text}/>
                 {/* <h1 className="text-black">{props.text}</h1> */}
             </div>
-            <div className="bg-orange w-full h-full absolute top-2 left-2 z-10 "></div>
+            <div className="bg-orange w-full h-full absolute top-4 left-4 z-10 "></div>
         </div>
     )
 }

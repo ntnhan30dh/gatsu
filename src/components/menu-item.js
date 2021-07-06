@@ -173,7 +173,7 @@ const MenuItem = props => {
         fluid={pic(props.pic)}
         background-size="cover"
         opacity={0.5}
-        className="w-full h-0 pb-140 menu-pic border-6  border-solid border-skin "
+        className="w-full h-0 pb-140 menu-pic border-8  lg:border-10 border-solid border-skin "
       ></BackgroundImage>
       {/* } */}
       <div className="text uppercase text-xl md:text-2xl lg:text-3xl  absolute bottom-0 w-full text-skin mb-8 md:px-14 ">
