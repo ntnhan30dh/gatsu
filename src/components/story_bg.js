@@ -31,7 +31,7 @@ const StoryBg = props => {
     : data.bgBig_menu.childImageSharp.fluid
 
   return (
-    <section className="storyContainer">
+    <section className="storyContainer ">
       <BackgroundImage
         Tag="section"
         fluid={imageData}
