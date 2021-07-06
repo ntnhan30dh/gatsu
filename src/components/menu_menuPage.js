@@ -40,7 +40,7 @@ const Menu_menuPage = () => {
     <section className="menuContainer bg-orange" id="menu">
       <div className="top relative bg-skin p-6 sm:p-10 md:p-20 lg:p-30 xl:px-64 2xl:px-72">
         <div className="headline ">
-          <h1 className=" ginto uppercase text-blue text-4xl xsm:text-6xl md:text-7xl lg:text-9xl max-w-max relative">
+          <h1 className="  ginto uppercase text-blue text-4xl xsm:text-6xl md:text-7xl lg:text-9xl xl:leading-90 max-w-max  relative">
             CHeck <br /> out our <br /> Menu{" "}
             <span className="hidden md:block absolute bottom-0 lg:bottom-6 right-0 xl:right-32 w-14 lg:w-20 ">
               <img src={arrowDown} alt="arrow" />
@@ -60,7 +60,7 @@ const Menu_menuPage = () => {
                 >
                   <Circle
                     color="orange"
-                    text="ORDER DELIVERY NOW"
+                    text="ORDER DELIVERY NOW!"
                     rotate="-rotate-12"
                   />
                 </Link>
@@ -69,7 +69,7 @@ const Menu_menuPage = () => {
           </div>
         </div>
         <div className="text my-10">
-          <p className="uppercase tracking-widest text-justify text-sm md:text-lg lg:text-xl text-orange md:pr-20 lg:pr-40 ">
+          <p className=" menuMenu_p uppercase  font-bold text-justify text-sm md:text-lg lg:text-xl text-orange md:pr-20 lg:pr-40 ">
             all the classic dishes you know+love, like pad thai and curries,
             join forces with tasty street food finds like Thai Burgers and
             waffle fries.

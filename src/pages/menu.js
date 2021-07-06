@@ -29,11 +29,11 @@ export default function Home() {
       <title>Gatsu Gatsu</title>
       </head>
     <TopBarOrder/>
-    <Header toggleMenu={toggleMenu} menuState={menuActive}/>
+    <Header toggleMenu={toggleMenu} menuState={menuActive} page="menu" />
     {/* <Plx parallaxData={parallaxMoveDown} className=" hidden md:block fixed translate-y-full top-4 lg:top-10 right-4 xl:right-20 orderNow  z-50 mb-80">
     <OrderNow />
         </Plx> */}
-    <StoryBg toggleMenu={toggleMenu} menuState={menuActive}/>
+    <StoryBg toggleMenu={toggleMenu} menuState={menuActive} />
     <Menu_menuPage />
     <Gif/>
     <Location/>

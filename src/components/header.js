@@ -1,13 +1,14 @@
 import React from "react"
 import logo from "../images/logo.png"
 import menuBtn from "../images/btn-menu.png"
+import homeBtn from "../images/btn_home.png"
 import orderBtn from "../images/btn-order.png"
 //import RotatedText from "./rotatedText"
 import { Link } from "gatsby"
 //import Sticky from "react-sticky-el"
 import Plx from "react-plx"
 
-const Header = () => {
+const Header = (props) => {
   const { innerWidth: width} = window;
 
   const parallaxScaleDown = [
@@ -42,10 +43,10 @@ const Header = () => {
         <img src={logo} alt="logo"  />
           </Plx>
         </Link>
-        <Link to="/menu" >
+        <Link to={props.page==="menu"?"/":"/menu"} >
         {/* <RotatedText text="MENU" hover="hover:bg-blue"  /> */}
         <div className=" btn h-6 md:h-8 lg:h-9">
-        <img src={menuBtn} alt="logo"  />
+        <img src={props.page==="menu"?homeBtn:menuBtn} alt="logo"  />
           </div>
         </Link>
       </header>

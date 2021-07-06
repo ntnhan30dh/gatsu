@@ -47,6 +47,7 @@ const StoryBg = props => {
                 color={mainPage ? "yellow" : "orange"}
                 text={mainPage ? "CHECK OUT THE MENU" : "YUMMY"}
                 rotate="-rotate-12"
+                textColour="yellow"
               />
         </Link>
             </div>

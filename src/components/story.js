@@ -20,7 +20,7 @@ const Story = props => {
       <div className="DevourContainer relative bg-skin p-8 md:p-16 lg:px-40 2xl:px-60 md:flex ">
         <div className="textWrap md:w-2/3">
         <div className="headline ">
-          <h1 className="ginto xl:leading-100	 text-blue  text-4xl xsm:text-6xl lg:text-7xl xl:text-7vw 2xl:text-9xl pr-20 xsm:pr-40 md:pr-60">READY <br /> STEADY <br /> DEVOUR</h1>
+          <h1 className="ginto xl:leading-90	 text-blue  text-4xl xsm:text-6xl lg:text-7xl xl:text-7vw 2xl:text-9xl pr-20 xsm:pr-40 md:pr-60">READY <br /> STEADY <br /> DEVOUR</h1>
           <div className=" w-40 absolute -top-10 right-0 md:hidden">
             <img src={gatsu_guy} alt="logo" />
           </div>
@@ -69,7 +69,7 @@ const Story = props => {
             <Circle color="" text="ORDER DELIVERY NOW!" rotate="-rotate-12" />
           </div>
           <div className="text  md:mr-20  m-auto lg:mr-0 xl:mr-auto">
-            <h1 className="ginto xl:leading-100	 text-right text-skin  text-4xl xsm:text-6xl  lg:text-7xl xl:text-7vw 2xl:text-9xl ">
+            <h1 className="ginto xl:leading-90	 text-right text-skin  text-4xl xsm:text-6xl  lg:text-7xl xl:text-7vw 2xl:text-9xl ">
               KILLER <br /> ASIAN <br /> STREET <br /> FOOD!
             </h1>
           </div>
