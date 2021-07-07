@@ -26,12 +26,12 @@ const Followus = props => {
         bg={props.bg==="bg-blue"?"bg-orange":"bg-blue"}
         text="* follow our shenanigans on instagram * "
       />
-      <div className="top w-full sm:flex flex-row-reverse sm:p-10 md:p-14 lg:px-30 xl:px-40 //xl:pb-40 //2xl:px-60 justify-center ">
-        <div className="pic w-1/5 relative ml-48 sm:ml-0 max-w-max ">
-          <div className=" w-44 md:w-full //lg:w-72 //xl:w-96 relative z-10">
+      <div className="top w-full sm:flex flex-row-reverse sm:p-10 md:mt-16 lg:px-30 xl:px-40 //xl:pt-28 //2xl:px-60 justify-center ">
+        <div className="pic  sm:-mt-14 lg:-mt-24 xl:-mt-32 lg:-ml-20 xl:-ml-24 relative ml-48 sm:ml-0 max-w-max ">
+          <div className=" w-44 md:w-48   lg:w-80 xl:w-96 relative z-10">
             <img src={gatsu} alt="gatsu" />
           </div>
-          <div className="absolute top-8 right-2/3">
+          <div className="absolute top-8 md:-top-2 lg:top-12 xl:top-16 right-2/3 md:-left-20 lg:-left-16 xl:-left-10 ">
             <Circle color= {props.bg==="bg-blue"?"orange":"yellow"} text="ENJOY!" rotate="-rotate-12" />
           </div>
         </div>

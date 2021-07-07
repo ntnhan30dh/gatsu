@@ -1,4 +1,4 @@
-import React from "react"
+import React , { useState, useEffect}  from "react"
 import logo from "../images/logo.png"
 import menuBtn from "../images/btn-menu.png"
 import homeBtn from "../images/btn_home.png"
@@ -9,7 +9,12 @@ import { Link } from "gatsby"
 import Plx from "react-plx"
 
 const Header = (props) => {
-  const { innerWidth: width} = window;
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
 
   const parallaxScaleDown = [
     {
@@ -18,7 +23,7 @@ const Header = (props) => {
       properties: [
         {
         startValue: 1,
-        endValue: 0.7,
+        endValue: 0.6,
         property: "scale"
         },
         {
@@ -31,7 +36,7 @@ const Header = (props) => {
   ];
   return (
     <div className=" sticky top-0 z-50 border-b-3 border-solid border-orange">
-      <header className="  flex justify-between items-center px-4 md:px-10 lg:px-20 bg-skin //lg:h-20">
+      <header className={`flex justify-between items-center px-4 md:px-10 lg:px-20 bg-skin ${scroll ? "" : "lg:h-20"}`}>
       <Link to="http://www.mjam.net/restaurant/wien/gatsu-gatsu" target="_blank" >
         {/* <RotatedText text="ORDER" hover="hover:bg-blue" /> */}
         <div className="btn h-6 md:h-8 lg:h-9 ">
@@ -39,7 +44,7 @@ const Header = (props) => {
           </div>
         </Link>
         <Link to="/">
-        <Plx parallaxData={parallaxScaleDown} className="w-24 md:w-28 lg:w-44 -mb-6 //lg:-mb-24">
+        <Plx parallaxData={parallaxScaleDown} className={`w-24 md:w-28 lg:w-44 -mb-6 ${scroll ? "" : "lg:-mb-24"} //`}>
         <img src={logo} alt="logo"  />
           </Plx>
         </Link>
