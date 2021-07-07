@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 const MenuItem = props => {
   const data = useStaticQuery(graphql`
     {
-      padThai: file(relativePath: { eq: "menuPic_PadThai.jpg" }) {
+      padThai: file(relativePath: { eq: "menuPic_PhadThai.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -13,7 +13,7 @@ const MenuItem = props => {
         }
       }
 
-      GlassNoodle: file(relativePath: { eq: "menuPic_GlassNoodle.jpg" }) {
+      GlassNoodle: file(relativePath: { eq: "menuPic_GlassNoodleSaladBowl.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -21,7 +21,7 @@ const MenuItem = props => {
         }
       }
 
-      Katsu: file(relativePath: { eq: "menuPic_Katsu.jpg" }) {
+      Katsu: file(relativePath: { eq: "menuPic_KatsuKatsuBowl.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -29,7 +29,7 @@ const MenuItem = props => {
         }
       }
 
-      Lucky: file(relativePath: { eq: "menuPic_Lucky.jpg" }) {
+      Lucky: file(relativePath: { eq: "menuPic_LuckyTeriyaki.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -37,7 +37,7 @@ const MenuItem = props => {
         }
       }
 
-      HappyYogi: file(relativePath: { eq: "menuPic_HappyYogi.jpg" }) {
+      HappyYogi: file(relativePath: { eq: "menuPic_HappyYogi.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -45,22 +45,14 @@ const MenuItem = props => {
         }
       }
 
-      GoNuts: file(relativePath: { eq: "menuPic_GoNuts.jpg" }) {
+      GoNuts: file(relativePath: { eq: "menuPic_GoNutsRedCurry.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      GreenDelight: file(relativePath: { eq: "menuPic_GreenDelight.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-      ThaiBurger: file(relativePath: { eq: "menuPic_ThaiBurger.jpg" }) {
+      GreenDelight: file(relativePath: { eq: "menuPic_GreenDelightCurry.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -68,7 +60,7 @@ const MenuItem = props => {
         }
       }
 
-      SpiceItUp: file(relativePath: { eq: "menuPic_SpiceitUp.jpg" }) {
+      ThaiBurger: file(relativePath: { eq: "menuPic_TastyThaiBurger.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -76,7 +68,7 @@ const MenuItem = props => {
         }
       }
 
-      TeriyakiBurger: file(relativePath: { eq: "menuPic_TeriyakiBurger.jpg" }) {
+      SpiceItUp: file(relativePath: { eq: "menuPic_SpiceItUpBurger.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -84,7 +76,7 @@ const MenuItem = props => {
         }
       }
 
-      GoldenGate: file(relativePath: { eq: "menuPic_GoldenGate.jpg" }) {
+      TeriyakiBurger: file(relativePath: { eq: "menuPic_LuckyTeriyakiBurger.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -92,7 +84,7 @@ const MenuItem = props => {
         }
       }
 
-      Kpop: file(relativePath: { eq: "menuPic_SpiceitUp.jpg" }) {
+      GoldenGate: file(relativePath: { eq: "menuPic_GoldenGateFries.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -100,7 +92,7 @@ const MenuItem = props => {
         }
       }
 
-      Rock_n_Rolls: file(relativePath: { eq: "menuPic_Rock_n_Rolls.jpg" }) {
+      Kpop: file(relativePath: { eq: "menuPic_KPopChicken.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -108,7 +100,7 @@ const MenuItem = props => {
         }
       }
 
-      Dumplings: file(relativePath: { eq: "menuPic_Dumplings.jpg" }) {
+      Rock_n_Rolls: file(relativePath: { eq: "menuPic_RockNRolls.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -116,7 +108,15 @@ const MenuItem = props => {
         }
       }
 
-      GatsuSide: file(relativePath: { eq: "menuPic_GatsuSide.jpg" }) {
+      Dumplings: file(relativePath: { eq: "menuPic_CheekyChickenDumplings.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      GatsuSide: file(relativePath: { eq: "menuPic_GatsuSideSalad.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -158,8 +158,6 @@ const MenuItem = props => {
         return data.Dumplings.childImageSharp.fluid
         case "GatsuSide":
         return data.GatsuSide.childImageSharp.fluid
-    
-
         default:
         return data.padThai.childImageSharp.fluid
     }
