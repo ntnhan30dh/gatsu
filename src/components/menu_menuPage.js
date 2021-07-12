@@ -69,7 +69,7 @@ const Menu_menuPage = () => {
           </div>
         </div>
         <div className="text my-10">
-          <p className=" menuMenu_p uppercase  font-bold text-justify text-sm md:text-lg lg:text-xl text-orange md:pr-20 lg:pr-40 ">
+          <p className=" menuMenu_p uppercase  font-bold text-left text-sm md:text-lg lg:text-xl text-orange md:pr-20 lg:pr-40 ">
             all the classic dishes you know+love, like pad thai and curries,
             join forces with tasty street food finds like Thai Burgers and
             waffle fries.
