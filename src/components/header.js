@@ -28,7 +28,7 @@ const Header = (props) => {
         property: "scale"
         },
         {
-          startValue: 45,
+          startValue: 35,
           endValue: 0,
           property: "translateY"
         },

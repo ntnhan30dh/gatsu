@@ -74,11 +74,11 @@ const Menu_menuPage = () => {
             join forces with tasty street food finds like Thai Burgers and
             waffle fries.
           </p>
-          <span className="block uppercase text-blue text-2xl ginto text-right pr-10 md:hidden">
+          {/* <span className="block uppercase text-blue text-2xl ginto text-right pr-10 md:hidden">
             swipe
-          </span>
+          </span> */}
         </div>
-        <div className="buttons text-right py-2 md:hidden">
+        <div className="buttons text-right //py-2 -mt-6 md:-mt-10 md:hidden">
           <button onClick={() => gotoPrev()}>
             {" "}
             <div className={arrow}>

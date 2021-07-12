@@ -170,7 +170,7 @@ const MenuMenuItem = props => {
         <div className=" w-6 lg:w-10 xl:w-16">
           <img src={star} alt="star" />
         </div>
-        <h1 className=" name ginto  uppercase text-xl md:text-5xl lg:text-6xl xl:text-7.5xl text-blue my-4 md:my-6  ">{props.name.split('*').map(str => <span className="ginto">{str} <br/> </span> )}</h1>
+        <h1 className=" name ginto  uppercase text-4xl md:text-5xl lg:text-6xl xl:text-7.5xl text-blue my-4 md:my-6  ">{props.name.split('*').map(str => <span className="ginto">{str} <br/> </span> )}</h1>
         <p className="md:description font-bold text-white text-xs xsm:text-sm lg:text-base xl:text-xl uppercase tracking-widest bold xxsm:my-4 lg:my-10 xl:pr-30  ">
         {props.text}
         </p>
