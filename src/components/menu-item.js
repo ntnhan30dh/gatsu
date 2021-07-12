@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import BackgroundImage from "gatsby-background-image"
+//import BackgroundImage from "gatsby-background-image"
 const MenuItem = props => {
   const data = useStaticQuery(graphql`
     {
@@ -164,7 +164,7 @@ const MenuItem = props => {
   }
 
   return (
-    <div className="menuItem relative w-full px-4 //md:px-2  ">
+    <div className="menuItem relative w-full //px-4 //md:px-2  ">
      
       {/* <BackgroundImage
         fluid={pic(props.pic)}
@@ -173,11 +173,11 @@ const MenuItem = props => {
         className="w-full h-0 pb-140 menu-pic border-8  lg:border-10 border-solid border-skin "
       ></BackgroundImage> */}
 
-      <div className=" w-full menu-pic border-8  lg:border-10 border-solid border-skin">
+      <div className=" w-full menu-pic border-12  //lg:border-10 border-solid border-skin">
           <Img className="w-full" fluid={pic(props.pic)} />
         </div>
      
-      <div className="text uppercase text-xl md:text-2xl lg:text-3xl  absolute bottom-0 w-full text-skin mb-8 md:px-14 ">
+      <div className="text uppercase leading-100 text-6vw xsm:text-4vw md:text-2xl lg:text-3xl  absolute bottom-0 w-full text-skin mb-8 md:px-14 ">
         {" "}
         <div className="block   mx-auto  text-center">
           {" "}

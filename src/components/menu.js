@@ -49,12 +49,12 @@ const Menu = () => {
         },
       },
       {
-        breakpoint: 500,
+        breakpoint: 499,
         settings: {
           slidesToShow: 1.05,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '7%',
+          centerPadding: '5%',
         },
       },
     ],
@@ -95,7 +95,7 @@ const Menu = () => {
             <MenuItem name="Gatsu *Side Salad" pic="GatsuSide" />
           </Slider>
         </div>
-        <div className=" w-full relative /grid grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+        <div className=" w-full relative /grid grid-rows-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-16">
           {/* <div className="row-start-1 col-start-1 xsm:col-start-2 md:col-start-3 lg:col-start-4 relative"> */}
           {/* <div className="absolute bottom-0 xsm:-left-10 md:-left-24 lg:-left-16 lg:-bottom-12 z-20"> */}
           <div className="absolute -bottom-6 z-20 w-full">

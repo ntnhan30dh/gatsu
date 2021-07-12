@@ -92,6 +92,12 @@ span {
 .circleDiv {
   line-height: 1.39;
   letter-spacing: 3.6px;
+  @media only screen and (max-width: 640px) {
+    body {
+      letter-spacing: 2.6px;
+    }
+  }
+
 }
 
 .marquee_list {
@@ -126,6 +132,8 @@ span {
   height: inherit !important;
  
     & > div {height: 100%;}
+
+    padding: 0 10px;
 
 }
 
