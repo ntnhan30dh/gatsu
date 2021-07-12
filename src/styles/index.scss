@@ -122,11 +122,16 @@ span {
 
 
 
-.slick-slide {
-  height: inherit !important;
+// .slick-slide {
+//   height: inherit !important;
  
-    & > div {height: 100%;}
+//     & > div {height: 100%;}
 
+// }
+
+.slick-slide {
+  //width: 360px !important;
+ // margin: 50px;
 }
 
 button:focus {

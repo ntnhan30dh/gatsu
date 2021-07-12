@@ -29,6 +29,7 @@ const Menu = () => {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 3000,
+  
     responsive: [
       {
         breakpoint: 1024,
@@ -50,8 +51,10 @@ const Menu = () => {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.1,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '7%',
         },
       },
     ],
@@ -96,7 +99,7 @@ const Menu = () => {
           {/* <div className="row-start-1 col-start-1 xsm:col-start-2 md:col-start-3 lg:col-start-4 relative"> */}
           {/* <div className="absolute bottom-0 xsm:-left-10 md:-left-24 lg:-left-16 lg:-bottom-12 z-20"> */}
           <div className="absolute -bottom-6 z-20 w-full">
-            <div className=" w-full  xsm:max-w-max xsm:mx-auto md:ml-auto md:mr-1/4 lg:mr-19% /xsm:-left-10 /md:-left-24 /lg:-left-16 -lg:-bottom-12 z-20">
+            <div className=" w-full xsm:max-w-max xsm:mx-auto md:ml-auto md:mr-1/4 lg:mr-19% /xsm:-left-10 /md:-left-24 /lg:-left-16 -lg:-bottom-12 z-20">
               <Link to="/menu">
                 <Circle
                   color="yellow"

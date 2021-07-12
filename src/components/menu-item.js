@@ -164,7 +164,7 @@ const MenuItem = props => {
   }
 
   return (
-    <div className="menuItem relative w-full px-4 md:px-2  ">
+    <div className="menuItem relative w-full px-4 //md:px-2  ">
      
       {/* <BackgroundImage
         fluid={pic(props.pic)}

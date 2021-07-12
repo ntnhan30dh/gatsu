@@ -22,7 +22,7 @@ const textColour = props.textColour==="yellow"?"text-yellow":"text-skin"
             </div>
             <div className={`content absolute top-0 w-full h-full flex items-center justify-center transform ${props.rotate}	`}>
               {" "}
-              <span className={`text-center px-4 text-xs md:text-base lg:text-xl md:px-8 lg:px-4 xl:px-8 font-bold ${props.color==="yellow"?textOrange:textSkin} `}> {props.text}</span>
+              <span className={`text-center px-4 text-xxs md:text-base lg:text-xl md:px-8 lg:px-4 xl:px-8 font-bold ${props.color==="yellow"?textOrange:textSkin} `}> {props.text}</span>
             </div>
           </div>
     )

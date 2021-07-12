@@ -37,7 +37,7 @@ const StoryBg = props => {
         fluid={imageData}
         background-size="cover"
         opacity={0.5}
-        className="bgContainer h-wFull xl:h-vh "
+        className="bgContainer h-wFull md:h-vh "
       >
         <div className=" w-full h-full grid grid-rows-2 grid-cols-2 ">
           <div className="row-start-1 col-start-1 relative">

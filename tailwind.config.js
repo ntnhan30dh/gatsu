@@ -65,10 +65,21 @@ module.exports = {
         '19%': '19%',
        },
        fontSize: {
+         'xxs':'.55rem',
         '7.5xl': '5rem',
+        '2vw': '2vw',
+        '3vw': '3vw',
+        '4vw': '4vw',
+        '5vw': '5vw',
         '6vw': '6vw',
         '7vw': '7vw',
         '8vw': '8vw',
+        '10vw': '10vw',
+        '12vw': '12vw',
+        '13vw': '13vw',
+        '14vw': '14vw',
+        '15vw': '15vw',
+        '50vw': '50vw',
        }
     },
     borderWidth: {
