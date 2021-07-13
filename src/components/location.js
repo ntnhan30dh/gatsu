@@ -15,7 +15,7 @@ const Location = () => {
       <div className=" relative md:px-20  lg:px-40 xl:px-72   lg:py-20">
       <div className="circleDiv hidden lg:block absolute top-1/10 right-1/10">
           <Link to="http://www.mjam.net/restaurant/wien/gatsu-gatsu" target="_blank" >
-            <Circle color="yellow" text="ORDER DELIVERY NOW!" rotate="-rotate-12" />
+            <Circle color="yellow" text="ORDER DELIVERY NOW!" rotate="rotate-12" />
         </Link>
           </div>
       <div className="headlineWrap mt-12 ml-6 xsm:ml-10 sm:ml-20 md:ml-0">

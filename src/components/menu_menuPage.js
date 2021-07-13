@@ -37,12 +37,12 @@ const Menu_menuPage = () => {
   const arrow = "w-6 mx-1"
 
   return (
-    <section className="menuContainer bg-orange" id="menu">
+    <section className="menuMenuContainer bg-orange" id="menu">
       <div className="top relative bg-skin p-6 sm:p-10 md:p-20 lg:p-30 xl:px-64 2xl:px-72">
         <div className="headline ">
-          <h1 className="  ginto uppercase text-blue text-4xl xsm:text-6xl md:text-7xl lg:text-9xl xl:leading-90 max-w-max  relative">
+          <h1 className="  ginto uppercase text-blue text-10vw sm:text-12vw //md:text-7vw //xsm:text-6xl md:text-7xl lg:text-8vw xl: leading-90 max-w-max  relative">
             CHeck <br /> out our <br /> Menu{" "}
-            <span className="hidden md:block absolute bottom-0 lg:bottom-6 right-0 xl:right-32 w-14 lg:w-20 ">
+            <span className="hidden md:block absolute bottom-0 //lg:bottom-6 right-0 //xl:right-32 w-14 lg:w-20 ">
               <img src={arrowDown} alt="arrow" />
             </span>
           </h1>
