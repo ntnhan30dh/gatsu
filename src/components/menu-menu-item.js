@@ -15,7 +15,7 @@ const MenuMenuItem = props => {
         }
       }
 
-      padThai2: file(relativePath: { eq: "mMenuPic_PhadThai_v3.png" }) {
+      padThai2: file(relativePath: { eq: "mMenuPic_PhadThai_v4.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
