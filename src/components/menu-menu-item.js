@@ -211,7 +211,7 @@ const MenuMenuItem = props => {
 
   return (
     <div className="menuMenuItemWrap relative w-full h-full flex">
-      <div className="text w-7/12 md:w-1/2 my-auto px-2  xsm:px-4 md:px-24 lg:px-40 xl:px-44 xxl:px-52 py-10 md:py:16 lg:py-24">
+      <div className="text w-11/12 xxsm:w-5/6 sm:w-2/3 md:w-1/2 my-auto px-3  xsm:px-4 md:px-24 lg:px-40 xl:px-44 xxl:px-52 py-10 md:py:16 lg:py-24">
         <div className=" w-6 lg:w-10 xl:w-16">
           <img src={star} alt="star" />
         </div>
@@ -226,7 +226,7 @@ const MenuMenuItem = props => {
         fluid={pic(props.pic)}
         background-size="cover"
         opacity={0.5}
-        className=" lg:hidden menu-pic w-5/12 md:w-1/2  "
+        className=" lg:hidden menu-pic w-1/4 sm:w-1/3 md:w-1/2  "
       >
       </BackgroundImage>
 
