@@ -1,4 +1,5 @@
 import React from "react"
+
 import MarqueeLogo from "./marquee_logo"
 import btn_contact from "../images/btn_contact.png"
 import btn_imprint from "../images/btn_imprint.png"
@@ -6,12 +7,10 @@ import btn_nutrition from "../images/btn_nutrition.png"
 import btn_hours from "../images/btn_hours.png"
 import btn_followus from "../images/btn_followus.png"
 //import RotatedText from "./rotatedText"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import downloadFile from "../downloads/Gatsu_Gatsu_Website_Instructions.pdf"
 import arrow from "../images/arrow_down.png"
-
-import { Link } from "gatsby"
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -69,17 +68,18 @@ const Contact = () => {
               </a>
             </p>
           </div>
-
-          <div className={`${textItem} md:-mt-14`}>
-            {/* <RotatedText text="FOLLOW US" /> */}
-            <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
-              <img src={btn_followus} alt="logo" />
+          <Link
+            to="https://www.instagram.com/gatsugatsu_delivery"
+            target="_blank"
+          >
+            <div className={`${textItem} md:-mt-14`}>
+              <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
+                <img src={btn_followus} alt="logo" />
+              </div>
+              <p className={p}>@gatsugatsu_delivery</p>
             </div>
-            <p className={p}>@gatsugatsu_delivery</p>
-          </div>
-
+          </Link>
           <div className={`${textItem} row-start-1 col-start-2`}>
-            {/* <RotatedText text="IMPRINT" /> */}
             <div className=" btn max-w-max h-6 md:h-8 lg:h-9 mx-auto my-4">
               <img src={btn_imprint} alt="logo" />
             </div>
